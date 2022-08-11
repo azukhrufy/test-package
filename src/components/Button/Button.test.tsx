@@ -1,0 +1,16 @@
+import * as React from 'react';
+import { render } from "@testing-library/react";
+
+import Button from "./Button";
+
+// describe("Button", () => {
+//   test("renders the Button component", () => {
+//     render(<Button label="Hello world!" />);
+//   });
+// });
+
+describe('Button', () => {
+  it('is rendered correctly', () => {
+    expect(<Button label="Hello world!" />).toMatchSnapshot();
+  });
+});
